@@ -1,14 +1,14 @@
-
 count = 0
-largest_number_so_far = float("+inf")
-smallest_number_so_far = float("-inf")
-larger_number = float("+inf")
+number = int(input("enter a number "))
+largest_number_so_far = number
+smallest_number_so_far = number
+
 while count < 5:
 
     number = int(input("Enter a number: "))
-    if  number > largest_number_so_far:
+    if number > largest_number_so_far:
         largest_number_so_far = number
-    if largest_number_so_far < smallest_number_so_far:
+    if number < smallest_number_so_far:
         smallest_number_so_far = number
 
     count = count + 1
